@@ -2,7 +2,9 @@
 		// console.log("Oi Mundo");
 		// console.log(document);
 		// console.log(document.querySelector("h1"));
-		// var titulo = document.querySelector(".titulo");
+    var titulo = document.querySelector(".titulo");
+    var botaoAdicionar = document.querySelector("#adicionar-paciente");
+    console.log(botaoAdicionar);
 		// console.log(titulo.textContent);
 		// titulo.textContent = "Aparecida Nutricionista";
 
@@ -41,4 +43,17 @@
       var imc = peso / ( altura * altura);
       tdImc.textContent = imc.toFixed(2);
       }
+
+      titulo.addEventListener("click", function(){
+        console.log("Olhá só, posso chamar uma função anônima.")
+      });
+
+      botaoAdicionar.addEventListener("click", function(){
+        console.log("Oi, cliquei no botão")
+      });
+      
+      // function mostraMensagem(){
+      //   console.log("Olá eu fui clicado!");
+      // }
+
     }
