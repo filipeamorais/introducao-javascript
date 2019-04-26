@@ -48,10 +48,11 @@
         console.log("Olhá só, posso chamar uma função anônima.")
       });
 
-      botaoAdicionar.addEventListener("click", function(){
-        console.log("Oi, cliquei no botão")
+      botaoAdicionar.addEventListener("click", function(event){
+        event.preventDefault();
+        console.log("Oi eu sou o botão e fui clicado")
       });
-      
+
       // function mostraMensagem(){
       //   console.log("Olá eu fui clicado!");
       // }

@@ -30,3 +30,19 @@ Outra caracteristica interessante, é que como manipulamos o DOM , quando trocamo
 
 ITAU:
 Intensive training program between "Itaú Unibanco" and "Instituto Mauá de Tecnologia" which a range of courses were given during the work period such as Financial Market, Strategic Planning, Scoping of Projects, Presentation Techniques and C# Programming Course.
+
+04/26/2019
+When we code a callback we can not put the function to be executed with paratenses. The right thing would be to put only the funcion name. Otherwise with parenthese the function will can the return not the function itself.
+
+WRONG:botao.addEventListener('click', botaoHandler());
+
+RIGHT:botao.addEventListener('click', botaoHandler);
+
+3)"Ele sabe que todo elemento de entrada, isto é, que recebe entrada do usuário possui a propriedade value enquanto elementos que exibem informações apenas possuem a propriedade textContent como é o caso da nossa tag span."
+
+4)Evitando o comportamento padrão de um formulário:
+
+botaoAdicionar.addEventListener("click", function(){
+    event.preventDefault();
+});
+
