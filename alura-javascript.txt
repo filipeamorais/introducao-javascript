@@ -46,3 +46,18 @@ botaoAdicionar.addEventListener("click", function(){
     event.preventDefault();
 });
 
+04/29/2019
+12) Fila de Eventos
+"botao.addEventListener('click', botaoHandler);
+    botao.addEventListener('click', outroHandler);
+</script>
+
+Nesse caso, temos uma fila de eventos, na qual o primeiro adicionado na fila será executado e o segundo em seguida."
+
+UMA FUN;'AO POR EVENTO:
+botao.onclick = botaoHandler;
+"Para cada evento existente no JavaScript, há a propriedade on + nomeDoEvent. No caso, temos onclick para o evento click, onmouseover para o evento mouseover e assim por diante."
+
+BOA PR[ATICA
+"Sendo assim, a boa prática é trabalhar com addEventListener() mesmo que você só queira adicionar um único evento."
+
