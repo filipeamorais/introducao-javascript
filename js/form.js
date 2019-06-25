@@ -32,20 +32,11 @@ botaoAdicionar.addEventListener("click", function(event){
     var pacienteTr = document.createElement("tr");
     pacienteTr.classList.add("paciente");
 
-    var nomeTd = document.createElement("td");
-    nomeTd.classList.add("info-nome");
-    nomeTd.textContent = paciente.nome;
-
-    var pesoTd = document.createElement("td");
-    var alturaTd = document.createElement("td");
-    var gorduraTd = document.createElement("td");
-    var imcTd = document.createElement("td");
-
-    
-    pesoTd.textContent = paciente.peso;
-    alturaTd.textContent = paciente.altura;
-    gorduraTd.textContent = paciente.gordura;
-    imcTd.textContent = paciente.imc;
+    var nomeTd = montaTd(paciente.nome, "info-nome");
+    var pesoTd = montaTd(paciente.peso, "info-peso");
+    var alturaTd = montaTd(paciente.altura, "info-peso");
+    var gorduraTd = montaTd(paciente.gordura, "info-gordura");
+    var imcTd = montaTd(paciente.imc, "info-imc");
 
     //adiciona o paciente na tabela
     pacienteTr.appendChild(nomeTd);
@@ -54,4 +45,12 @@ botaoAdicionar.addEventListener("click", function(event){
     pacienteTr.appendChild(gorduraTd);
     pacienteTr.appendChild(imcTd);
     return pacienteTr;
+  }
+
+  function montaTd(dado, classe){
+    var td =  document.createElement("td");
+    td.textContent = dado;
+    td.classList.add(classe);
+
+    return td;
   }
