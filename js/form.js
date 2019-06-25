@@ -13,6 +13,7 @@ botaoAdicionar.addEventListener("click", function(event){
 
     tabela.appendChild(pacienteTr);
     
+    form.reset();
 
     console.log("Oi eu sou o botão e fui clicado")
   });
@@ -33,11 +34,11 @@ botaoAdicionar.addEventListener("click", function(event){
     pacienteTr.classList.add("paciente");
 
     //adiciona o paciente na tabela
-    pacienteTr.appendChild(montaTd(paciente.nome, "info-nome"););
-    pacienteTr.appendChild(montaTd(paciente.peso, "info-peso"););
-    pacienteTr.appendChild(montaTd(paciente.altura, "info-peso"););
-    pacienteTr.appendChild(montaTd(paciente.gordura, "info-gordura"););
-    pacienteTr.appendChild(montaTd(paciente.imc, "info-imc"););
+    pacienteTr.appendChild(montaTd(paciente.nome, "info-nome"));
+    pacienteTr.appendChild(montaTd(paciente.peso, "info-peso"));
+    pacienteTr.appendChild(montaTd(paciente.altura, "info-peso"));
+    pacienteTr.appendChild(montaTd(paciente.gordura, "info-gordura"));
+    pacienteTr.appendChild(montaTd(paciente.imc, "info-imc"));
     return pacienteTr;
   }
 
